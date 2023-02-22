@@ -22,14 +22,18 @@ console.log(
 
 let score = 20
 let highscore = 0
-const secretNumber = Math.trunc(Math.random() * 20) + 1
+// obtener un numero aleatorio entre 1 y 20
+const MIN_NUMBER = 1
+const MAX_NUMBER = 20
+const secretNumber = Math.trunc(Math.random() * MAX_NUMBER) + MIN_NUMBER
+
 const number = guessfield.value
 
+console.log(`El numero secreto es ${secretNumber}´)
+console.log(`El numero que ingresaste es ${number}´)
 
-scoreField.textContent = 10
+// tercer paso: añadir un listener al checkButton y mostrar
+// un mensaje que diga si el numero es mayor o menor en el campo messageField
+//...
 
-checkButton.addEventListener('click', alerta)
 
-function alerta() {
-  alert('me hiciste click')
-}
