@@ -7,7 +7,6 @@ const highscoreField = document.querySelector('.highscore')
 const messageField = document.querySelector('.message')
 const numberField = document.querySelector('.number')
 
-//segundo paso: crear la variable que va a guardar el valor del score
 
 console.log(
   scoreField,
@@ -18,6 +17,14 @@ console.log(
   messageField,
   numberField
   )
+
+// segundo paso: crear las variables que neceistamos para el juego
+
+let score = 20
+let highscore = 0
+const secretNumber = Math.trunc(Math.random() * 20) + 1
+const number = guessfield.value
+
 
 scoreField.textContent = 10
 
