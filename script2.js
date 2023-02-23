@@ -11,7 +11,7 @@ const bodyField = document.querySelector('body')
 // segundo paso: crear las variables que neceistamos para el juego
 
 let score
-let highscore = 0
+let highscore
 
 // obtener un numero aleatorio entre 1 y 20
 const MIN_NUMBER = 1
